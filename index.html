@@ -17,24 +17,42 @@
 <body>
     <nav class="navbar">
         <div class="nav-links">
-            <a href="#">Home</a>
-            <a href="#">About me</a>
+            <a href="index.html">Home</a>
+            <a href="#first-entry-article">Blog</a>
         </div>
-        <div class="nav-media"><a href="https://github.com/j-schall"><img src="img/github-mark.png" height="25"
-                    width="25"></a></div>
+        <div class="nav-media"><a href="https://github.com/j-schall"><img src="img/github-mark.png" height="25" width="25"></a></div>
     </nav>
-
-    <section class="blog-section">
-        <article class="first-entry">
-            <h1>Hello World!</h1>
-            <p>This is the first entry.</p>
-            <a href="#details" id="more-button">More</a>
-            <p id="date-item">5.11.2023</p>
-            <hr>
-            <div id="details">
-                <span>Hey, welcome on my blog.<br>Here I will post coding projects, thoughts as well as other tech stuff:) </span>
-            </div>
-        </article>
+    <div class="wellcome">
+        <h1 id="headline">Wellcome</h1>
+        <p class="short-about-me">Hi👋,<br> I'm a 14 y/o student from Germany. I will share my projects, talk about
+            projects, I contribute and other stuff.</p>
+    </div>
+    <article class="place-holder"></article>
+    <section class="stack">
+        <h1 class="headline">Skills</h1>
+        <div class="stack-items">
+            <div onclick="goToWikipediaPage(this)">Java</div>
+            <div onclick="goToWikipediaPage(this)">HTML</div>
+            <div onclick="goToWikipediaPage(this)">CSS</div>
+            <div onclick="goToWikipediaPage(this)">SQL</div>
+            <div onclick="goToWikipediaPage(this)">Arduino</div>
+        </div>
+    </section>
+    <section class="blog">
+        <h1 class="headline">Recent Posts</h1>
+        <div class="first-entry-container">
+            <article id="first-entry-article">
+                <h1 class="entry-header">Hello World!</h1>
+                <p>This is the first entry.</p>
+                <a href="#details" id="more-button">More</a>
+                <p id="date-item">5.11.2023</p>
+                <hr>
+                <div id="details">
+                    <span>Hey, welcome on my blog.<br>This is the first post. In the near future, I will post coding
+                        projects, thoughts as well as other tech stuff:)</span>
+                </div>
+            </article>
+        </div>
     </section>
 
     <!-- Add JS -->

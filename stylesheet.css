@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: #1d2a35;
     font-family: 'Pixelify Sans', sans-serif;
@@ -33,16 +37,76 @@ a {
     margin-right: 2%;
 }
 
-.blog-section {
+.wellcome {
+    align-items: center;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    height: 80vh;
+    flex-direction: column;
+}
+
+#headline {
+    font-size: 60px;
+    color: #04AA6D;
+}
+
+.place-holder {
+    height: 150px;
+}
+
+.short-about-me {
+    font-size: 16px;
+}
+
+.stack-items {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.stack {
+    margin-bottom: 50px;
+}
+
+.stack-items div {
+    border-style: solid;
+    height: 50px;
+    width: 200px;
+    border-radius: 10px;
+    border-color: #253543;
+    font-size: 20px;
+    text-align: center;
+    align-items: center;
+    margin-left: 10px;
+    user-select: none;
+    display: flex;
+    justify-content: center;
+}
+
+.stack-items div:hover {
+    background-color: #253543;
+}
+
+div[class*='entry-container'] {
+    display: none;
     margin-right: 20%;
     margin-left: 20%;
     border-radius: 10px;
     background-color: #253543;
-    display: flex;
-    justify-content: space-between;
     padding: 20px;
     box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
     margin-top: 20px;
+    height: max-content;
+}
+
+.headline {
+    margin-left: 20%;
+    color: #04AA6D;
+}
+
+.first-entry-container {
+    margin-bottom: 30px;
 }
 
 #date-item {
