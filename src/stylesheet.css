@@ -1,10 +1,14 @@
+@font-face {
+    font-family: Roboto;
+    src: url("/src/font/Roboto-Regular.ttf");
+}
+
 html {
     scroll-behavior: smooth;
 }
 
 body {
     background-color: #1d2a35;
-    font-family: 'Pixelify Sans', sans-serif;
     font-family: 'Roboto', sans-serif;
     color:white;
 }
