@@ -153,6 +153,22 @@ div[class*='entry-container'] {
     border-width: 5px;
 }
 
+@media screen and (max-width: 635px) {
+    
+
+    .topic-table {
+        margin-top: 40px;
+        float: none;
+        width: 80%; /* oder eine andere Breite, die besser zu deinem Design passt */
+    }
+
+    .entry-frame {
+        border: none;
+        margin: 5% auto;
+        width: 80%; /* oder eine andere Breite, die besser zu deinem Design passt */
+    }
+}
+
 .topic-table th {
     display: flex;
     justify-content: center;
