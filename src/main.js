@@ -42,3 +42,10 @@ function goToWikipediaPage(stackItem) {
             break;
     }
 }
+
+function clearScreen() {
+    var screen = document.getElementsByClassName("homepage")[0];
+    var blogScreen = document.getElementById("blog-page");
+    screen.innerHTML = blogScreen.innerHTML;
+    blogScreen.style.visibility = "visible";
+}
