@@ -49,3 +49,10 @@ function clearScreen() {
     screen.innerHTML = blogScreen.innerHTML;
     blogScreen.style.visibility = "visible";
 }
+
+function setContent(element) {
+    let topic = encodeURIComponent(element.textContent.replace(/\s/g, "")) + ".txt";
+    var area = document.getElementsByClassName("text-content")[0];
+    console.log(topic);
+    fetch("src/entries/" + topic).then(response => response.text()).then(text => area.textContent = text);
+}
