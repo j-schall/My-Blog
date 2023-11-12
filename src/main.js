@@ -1,15 +1,8 @@
 const moreButton = document.getElementById("more-button");
-const details = document.getElementById("details");
 
 let count = 0;
 moreButton.addEventListener("click", () => {
-    if (count == 0) {
-        details.style.display = "block";
-        count++;
-    } else {
-        details.style.display = "none";
-        count--;
-    }
+    clearScreen();
 });
 
 const hiddenSection = document.querySelector('.first-entry-container');
