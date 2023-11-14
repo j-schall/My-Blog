@@ -1,0 +1,2 @@
+This is a project written in Java and the JavaFX framework. It visualize mathematical functions and calculate 
+their properties like intersection points or the function itself from given points.

@@ -57,7 +57,7 @@
     }
 }
 
-@media (min-width: 600px) {
+@media (min-width: 900px) {
     .topic-table {
         float: right;
         margin-right: 5%;
@@ -87,7 +87,7 @@
     
 }
 
-@media (max-width: 600px) {
+@media (max-width: 900px) {
     .topic-table {
         border-color: #253543;
         border-style: solid;
