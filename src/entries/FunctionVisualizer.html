@@ -1,5 +1,23 @@
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
+        @media only screen and (max-width: 600px) {
+
+            /* Stile für kleine Bildschirme hier definieren */
+            ul {
+                font-size: 18px;
+                margin-left: 11px;
+                padding: 5px;
+                /* Entfernt den Listenabstand */
+            }
+
+            li {
+                /* Verkleinert die Schriftgröße */
+                margin-bottom: 8px;
+                /* Fügt Abstand zwischen den Listenelementen hinzu */
+            }
+        }
+
         .headline {
             margin-left: 35%;
         }
@@ -18,33 +36,38 @@
         }
     </style>
 </head>
-<a href="https://github.com/j-schall/FunctionVisualizer"><img src="src/img/github-mark-white.png" height="25"
-    width="25"></a>
-<h1 class="headline">Function Visualizer</h1>
-<p>This is a project written in Java and the JavaFX framework. It visualize mathematical functions and calculate
-    their properties like intersection points or the function itself from given points.
-</p>
-<p>I started the project as I realize that it's always the same procedure when I did my math homework. 
-    So I code a little programm to visualize and calculate proportional functions, later I added linear functions too.
-    In cause of more and more topics in my math lessons I created this application how it looks today and publish it on Github.
-    <br>
-    You have to only add the ascent (m) and optionally the y-axis intercept (b) if you want to get an idea of the look of the graph. 
-    Sometimes it's handy to have an outline of the function to check whether you have the right function equation;)
-</p>
-<p>Otherwise you can let the programm calculate the whole equation by entering two given points.</p>
 
-<h1>Update ideas</h1>
-<ol>
-    <li>An "infinite graph" (It's for me pretty complicated)</li>
-    <li>Intersections point of two functions</li>
-    <li>better UI design (optional 😅)</li>
-</ol>
+<body>
+    <a href="https://github.com/j-schall/FunctionVisualizer"><img src="src/img/github-mark-white.png" height="25"
+            width="25"></a>
+    <h1 class="headline">Function Visualizer</h1>
+    <p>This is a project written in Java and the JavaFX framework. It visualize mathematical functions and calculate
+        their properties like intersection points or the function itself from given points.
+    </p>
+    <p>I started the project as I realize that it's always the same procedure when I did my math homework.
+        So I code a little programm to visualize and calculate proportional functions, later I added linear functions
+        too.
+        In cause of more and more topics in my math lessons I created this application how it looks today and publish it
+        on Github.
+        <br>
+        You have to only add the ascent (m) and optionally the y-axis intercept (b) if you want to get an idea of the
+        look of the graph.
+        Sometimes it's handy to have an outline of the function to check whether you have the right function equation;)
+    </p>
+    <p>Otherwise you can let the programm calculate the whole equation by entering two given points.</p>
 
-<h1>Project Structure && Documentation</h1>
-<ul>
-    <li>src</li>
+    <h1>Update ideas</h1>
+    <ol>
+        <li>An "infinite graph" (It's for me pretty complicated)</li>
+        <li>Intersections point of two functions</li>
+        <li>better UI design (optional 😅)</li>
+    </ol>
+
+    <h1>Project Structure && Documentation</h1>
     <ul>
-        <li>main/java/com/functionvisualizer</li>
+        <li>src</li>
+        <ul>
+            <li>main/java/com/functionvisualizer</li>
             <ul>
                 <li>attributs</li>
                 <ul>
@@ -60,12 +83,13 @@
                 <li>CalculationThread.java</li>
                 <li>FunctionVisualizer.java</li>
             </ul>
-        <br>
-        <li>test/java/com/functionvisualizer</li>
-        <ul>
-            <li>FunctionVisualizerTest.java</li>
+            <br>
+            <li>test/java/com/functionvisualizer</li>
+            <ul>
+                <li>FunctionVisualizerTest.java</li>
+            </ul>
         </ul>
     </ul>
-</ul>
 
-<a class="more-info" href="https://github.com/j-schall/FunctionVisualizer">Get more Information</a>
+    <a class="more-info" href="https://github.com/j-schall/FunctionVisualizer">Get more Information</a>
+</body>
